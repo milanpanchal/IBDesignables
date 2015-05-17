@@ -15,6 +15,7 @@
 		E0BA14761B0905680022A5E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0BA14751B0905680022A5E4 /* Images.xcassets */; };
 		E0BA14791B0905680022A5E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0BA14771B0905680022A5E4 /* LaunchScreen.xib */; };
 		E0BA14851B0905680022A5E4 /* IBDesignablesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BA14841B0905680022A5E4 /* IBDesignablesTests.m */; };
+		E0BA14901B090E770022A5E4 /* SAMCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BA148F1B090E770022A5E4 /* SAMCustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		E0BA147E1B0905680022A5E4 /* IBDesignablesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBDesignablesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0BA14831B0905680022A5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0BA14841B0905680022A5E4 /* IBDesignablesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBDesignablesTests.m; sourceTree = "<group>"; };
+		E0BA148E1B090E770022A5E4 /* SAMCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMCustomView.h; sourceTree = "<group>"; };
+		E0BA148F1B090E770022A5E4 /* SAMCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMCustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				E0BA146A1B0905680022A5E4 /* AppDelegate.m */,
 				E0BA146F1B0905680022A5E4 /* ViewController.h */,
 				E0BA14701B0905680022A5E4 /* ViewController.m */,
+				E0BA148E1B090E770022A5E4 /* SAMCustomView.h */,
+				E0BA148F1B090E770022A5E4 /* SAMCustomView.m */,
 				E0BA14721B0905680022A5E4 /* Main.storyboard */,
 				E0BA14751B0905680022A5E4 /* Images.xcassets */,
 				E0BA14771B0905680022A5E4 /* LaunchScreen.xib */,
@@ -226,6 +231,7 @@
 				E0BA14681B0905680022A5E4 /* main.m in Sources */,
 				E0BA14711B0905680022A5E4 /* ViewController.m in Sources */,
 				E0BA146E1B0905680022A5E4 /* IBDesignables.xcdatamodeld in Sources */,
+				E0BA14901B090E770022A5E4 /* SAMCustomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +426,7 @@
 				E0BA148A1B0905680022A5E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0BA148B1B0905680022A5E4 /* Build configuration list for PBXNativeTarget "IBDesignablesTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +435,7 @@
 				E0BA148D1B0905680022A5E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
