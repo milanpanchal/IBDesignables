@@ -24,9 +24,6 @@
                                     <constraint firstAttribute="height" constant="100" id="hfu-kK-UQw"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                        <color key="value" red="0.41761031554230083" green="0.79607843137254897" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="endColor">
                                         <color key="value" red="0.45432360225558754" green="0.15836654154668861" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
@@ -40,6 +37,9 @@
                                         <color key="value" red="0.76982840990000001" green="0.63908113946643352" blue="0.028308073683916076" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.76982840990000001" green="0.34239735449999997" blue="0.1239429076" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -54,26 +54,51 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Added Via IB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RoI-Lo-xGR">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="RoI-Lo-xGR" firstAttribute="top" secondItem="QYn-He-L6r" secondAttribute="bottom" constant="13" id="9vp-00-oXv"/>
                             <constraint firstAttribute="centerY" secondItem="QYn-He-L6r" secondAttribute="centerY" constant="350" id="FnU-T0-1o8">
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="centerY" secondItem="RoI-Lo-xGR" secondAttribute="centerY" constant="-73.5" id="dKb-Hm-jtY">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-74"/>
                             </constraint>
                             <constraint firstAttribute="centerX" secondItem="QYn-He-L6r" secondAttribute="centerX" constant="150" id="dZ0-gW-8vQ">
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
+                            <constraint firstAttribute="centerX" secondItem="RoI-Lo-xGR" secondAttribute="centerX" constant="179" id="r7p-Ay-PuT">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="RoI-Lo-xGR"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="FnU-T0-1o8"/>
                                 <exclude reference="dZ0-gW-8vQ"/>
+                                <exclude reference="9vp-00-oXv"/>
+                                <exclude reference="dKb-Hm-jtY"/>
+                                <exclude reference="r7p-Ay-PuT"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="RoI-Lo-xGR"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="FnU-T0-1o8"/>
                                 <include reference="dZ0-gW-8vQ"/>
+                                <include reference="9vp-00-oXv"/>
+                                <exclude reference="dKb-Hm-jtY"/>
+                                <include reference="r7p-Ay-PuT"/>
                             </mask>
                         </variation>
                     </view>

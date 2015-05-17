@@ -8,8 +8,40 @@
 
 #import "SAMCustomView.h"
 
+@interface SAMCustomView ()
+
+@property (nonatomic) IBInspectable UIColor *startColor;
+@property (nonatomic) IBInspectable UIColor *midColor;
+@property (nonatomic) IBInspectable UIColor *endColor;
+
+@end
 
 @implementation SAMCustomView
+
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        
+        self.startColor     = [UIColor redColor];
+        self.midColor       = [UIColor greenColor];
+        self.endColor       = [UIColor blueColor];
+        self.borderWidth    = 2;
+        self.cornerRadious  = 10;
+        self.isHorizontal   = NO;
+
+        [self customInit];
+    }
+    return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self customInit];
+    }
+    return self;
+}
 
 
 - (void)drawRect:(CGRect)rect {
@@ -28,6 +60,7 @@
 }
 
 - (void)customInit {
+
 
     self.layer.cornerRadius = self.cornerRadious;
     self.layer.borderWidth = self.borderWidth;
