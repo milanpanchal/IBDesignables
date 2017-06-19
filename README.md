@@ -6,12 +6,12 @@ A sample app that demonstrate use of IBDesignable and IBInspectable attributes i
 
 
 
-##Screenshots:
+## Screenshots:
 
 ![ScreenShot](https://raw.github.com/milanpanchal/IBDesignables/master/Screenshots/screenshot1.png)
 
 
-##Contact:
+## Contact:
 
 
 Follow me on 
@@ -24,7 +24,7 @@ Follow me on
 
 
 
-##License:
+## License:
 
 This Project is available under the MIT license.
 
